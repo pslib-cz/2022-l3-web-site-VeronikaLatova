@@ -3,7 +3,7 @@
 Práce se zabývá vytvořením webových stránek ...
 
 Nezapomenu upravit odkazy a "aktivovat" GitHub Pages... 
-[Webová stránka s ukázkovou implemetací](https://pslib-cz.github.io/2022-l3-web-site-VeronikaLatova/index.html)
+[Webová stránka s ukázkovou implemetací](https://pslib-cz.github.io/2022-l3-web-site-VeronikaLatova/)
 
 [Návrh webové stránky ve Figmě](https://www.figma.com/file/qIyMFQ4gS93JcF0lfKw6dx/L3_WEB_projekt_karavan?type=design&node-id=0-1&t=KHgFh0EfDhtHEb00-0)
 
