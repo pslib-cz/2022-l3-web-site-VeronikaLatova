@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./lightgallery/lightgallery.css">
+    <link rel="stylesheet" href="./lightgallery/lg-thumbnail.css">
+    <link rel="stylesheet" href="./lightgallery/lg-zoom.css">
+    <link rel="stylesheet" href="./lightgallery/lg-autoplay.css">
+    <script src="./lightgallery/lightgallery.min.js"></script>
+    <script src="./lightgallery/lg-thumbnail.min.js"></script>
+    <script src="./lightgallery/lg-zoom.min.js"></script>
+    <script src="./lightgallery/lg-autoplay.min.js"></script>
     <title>Pronájem karavanu u Labe - galerie</title>
 </head>
 <body>
@@ -31,31 +39,47 @@
         <section class="sekce">
             <h2>Uvnitř karavanu</h2>
             <p>Uvnitř karavanu najdeme rozkládací postele pro 4 lidi (při tomto počtu je vhodnější 2 děti + 2 dospělí, kvůli prostoru), úložní prostory, odpadkový koš, nabíjecí stanici, topení, lednici, nádobí, příbory a rádio. Sprcha je řešena mimo karavan, stejně tak suchý záchod. Voda je čerpána ze studny, avšak pitná voda je obstarána zvlášť.</p>
-            <div class="fotky">
-                <div class="img__div">
-                    <a href=""><img class="img" src="./imgs/karavan/DSCN0764.JPG" alt=""></a>
-                </div>
-                <div class="img__div">
-                   <a href=""> <img class="img" src="./imgs/karavan/DSCN0776.JPG" alt=""></a>
-                </div>
-                <div class="img__div">
-                    <a href=""><img class="img" src="./imgs/karavan/DSCN0767.JPG" alt=""></a>
-                </div>
-                <div class="img__div">
-                    <a href=""><img class="img" src="./imgs/karavan/DSCN0769.JPG" alt=""></a>
-                </div>
-                <div class="img__div">
-                    <a href=""><img class="img" src="./imgs/karavan/DSCN0770.JPG" alt=""></a>
-                </div>
-                <div class="img__div">
-                    <a href=""><img class="img" src="./imgs/karavan/DSCN0771.JPG" alt=""></a>
-                </div>
-                <div class="img__div">
-                    <a href=""><img class="img" src="./imgs/karavan/DSCN0774.JPG" alt=""></a>
-                </div>
-                <div class="img__div">
-                    <a href=""><img class="img" src="./imgs/karavan/DSCN0677.JPG" alt=""></a>
-                </div>
+            <div class="thumbnails">
+                    <a href="./imgs/karavan/DSCN0764.JPG">
+                        <div class="img__div">
+                            <img class="picture" src="./imgs/karavan/DSCN0764.JPG" alt="">
+                        </div>
+                    </a>
+                    <a href="./imgs/karavan/DSCN0776.JPG">
+                        <div class="img__div">
+                            <img class="picture" src="./imgs/karavan/DSCN0776.JPG" alt="">
+                        </div>
+                    </a>
+                    <a href="./imgs/karavan/DSCN0767.JPG">
+                        <div class="img__div">
+                            <img class="picture" src="./imgs/karavan/DSCN0767.JPG" alt="">
+                        </div>
+                    </a>
+                    <a href="./imgs/karavan/DSCN0769.JPG">
+                        <div class="img__div">
+                            <img class="picture" src="./imgs/karavan/DSCN0769.JPG" alt="">
+                        </div>
+                    </a>
+                    <a href="./imgs/karavan/DSCN0770.JPG">
+                        <div class="img__div">
+                            <img class="picture" src="./imgs/karavan/DSCN0770.JPG" alt="">
+                        </div>
+                    </a>
+                    <a href="./imgs/karavan/DSCN0771.JPG">
+                        <div class="img__div">
+                            <img class="picture" src="./imgs/karavan/DSCN0771.JPG" alt="">
+                        </div>
+                    </a>
+                    <a href="./imgs/karavan/DSCN0774.JPG">
+                        <div class="img__div">
+                            <img class="picture" src="./imgs/karavan/DSCN0774.JPG" alt="">
+                        </div>
+                    </a>
+                    <a href="./imgs/karavan/DSCN0677.JPG">
+                        <div class="img__div">
+                            <img class="picture" src="./imgs/karavan/DSCN0677.JPG" alt="">
+                        </div>
+                    </a>
             </div>
         </section>
         <section class="sekce">
@@ -125,5 +149,15 @@
             <p>Vytvořila: Veronika Látová, L3</p>
         </div>
     </footer>
+    <script type="text/javascript">
+        lightGallery(
+            document.querySelector(".thumbnails"), {
+            plugins: [lgZoom, lgThumbnail, lgAutoplay],
+            speed: 500,
+            slideShowAutoplay: true,
+            slideShowInterval: 2000,
+            selector: ".picture > a" 
+        });
+    </script>
 </body>
 </html>
