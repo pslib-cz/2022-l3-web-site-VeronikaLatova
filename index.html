@@ -2,12 +2,88 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <title>Tento webový projekt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Mainpage</title>
 </head>
 <body>
-    <h1>My Web Page</h1>    
+    <header>
+        <nav class="navigace">
+            <div class="logo__div"><a href="logo"></a></div>
+            <div>
+                <a>Galerie</a>
+                <a>Ceník a kontakt</a>
+            </div>
+        </nav>
+        <div class="pozadi">
+            <img class="fotka--karavan" src="./imgs/kolem/DSCN0693.JPG" alt="Pohled na karavan a část pergoly obrostlé vínem">
+        </div>
+        <h1 class="pronajem">Pronájem karavanu u Labe</h1>
+        <div class="vyhody">
+            <div class="vyhoda--rekreace">
+                <p>Skvělé místo pro rybaření a rekreaci</p>
+            </div>
+            <div class="vyhoda--prostredi">
+                <p>Příjemně zařízené prostředí</p>
+            </div>
+            <div class="vyhoda--mapa">
+                <p>Dobrý startovní bod pro výlety</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="karta">
+            <div class="karta__text">
+                <h2>Lokalita</h2>
+                <p>Pozemek s karavanem a přístavbou se nachází na levém břehu řeky Labe v obci Dobříň, 3 km od Roudnice nad Labem. Díky své lokalitě a zařízení nabízí vhodné zázemí pro rybaření a rekreaci.</p>
+            </div>
+            <div class="karta__img">
+                <img src="./imgs/okoli/DSCN0806.JPG" alt="Červený kajak plující po Labi se stromy v pozadí">
+            </div>
+        </section>
+        <section class="karta--left">
+            <div class="karta__text">
+                <h2>Karavan</h2>
+                <p>Uvnitř karavanu najdeme rozkládací postele pro 4 lidi (při tomto počtu je vhodnější 2 děti + 2 dospělí, kvůli prostoru), úložní prostory, odpadkový koš, nabíjecí stanici, topení, lednici, nádobí, příbory a rádio. Sprcha je řešena mimo karavan, stejně tak suchý záchod. Voda je čerpána ze studny, avšak pitná voda je obstarána zvlášť.</p>
+            </div>
+            <div class="karta__img">
+                <img src="./imgs/kolem/DSCN0678.JPG" alt="Pohled na karavan pod pergolou a s lavicí vpředu">
+            </div>
+        </section>
+        <section class="karta">
+            <div class="karta__text">
+                <h2>Vybavení</h2>
+                <p>Součástí karavanu je také dřevěný přístřešek s osvětlením, venkovní sezení a rozkládací lavice, lednička v zemi, dřez, gril, kamna, plynový hořák, malá kůlna a loďka.</p>
+            </div>
+            <div class="karta__img">
+                <img src="./imgs/kolem/DSCN0707.JPG" alt="Vybavení ke karavanu, konkrétně dřez s pitnou vodou, kamna, plynový hořák a dříví. Vše pod pergolou. V pravém dolním rohu je lavice.">
+            </div>
+        </section>
+        <section class="karta--left">
+            <div class="karta__text">
+                <h2>Okolí</h2>
+                <p>Sportovci jistě ocení tzv. Labskou stezku (cyklostezku), která vede od pozemku jedním směrem do Roudnice nad Labem, dále dokonce přes Ústí nad Labem, až do Německa. Poblíž pozemku lze také najít háj, který je vhodný pro příjemné procházky. Pokud jde o dostupnost, v Dobříni je možné nasednout na vlak či autobus, nakoupit si v samoobsluze či navštívit dětské hřiště.</p>
+            </div>
+            <div class="karta__img">
+                <img src="" alt="Červený kajak plující po Labi se stromy v pozadí">
+            </div>
+        </section>
+        <div class="buttons">
+            <a class="button" href="">CHCI VIDĚT GALERII</a>
+            <p>nebo</p>
+            <a class="button" href="">CHCI VIDĚT CENÍK A KONTAKT</a>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>©karavanulabe.cz</p>
+            <p>Vytvořila: Veronika Látová, L3</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,10 @@
+:root {
+    --white: #FFFFFF;
+    --darkgreen: #214E34;
+    --green: #839073;
+    --gray: #D9D9D9;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
