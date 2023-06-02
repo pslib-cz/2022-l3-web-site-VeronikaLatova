@@ -19,6 +19,11 @@ html {
     margin: 1em;
 }
 
+.zeleny_text {
+    text-decoration: none;
+    color: var(--darkgreen);
+}
+
 .pozadi {
     position: relative;
     width: 100vw;
@@ -57,5 +62,56 @@ html {
 }
 
 .vyhoda--rekreace {
-    background-image: url(./imgs/);
+    background-image: url(./imgs/ico/rekreace.svg);
+    background-repeat: no-repeat;
+    padding-left: 7em;
+    padding-bottom: 1em;
+    margin: 1.5em;
+}
+.vyhoda--prostredi {
+    background-image: url(./imgs/ico/prostredi.svg);
+    background-repeat: no-repeat;
+    padding-left: 7em;
+    padding-bottom: 1em;
+    margin: 1.5em;
+}
+
+.vyhoda--mapa {
+    background-image: url(./imgs/ico/bod.svg);
+    background-repeat: no-repeat;
+    padding-left: 7em;
+    padding-bottom: 1em;
+    margin: 1.5em;
+}
+
+.karta {
+    margin: 1em;
+}
+
+.karta--left {
+    margin: 1em;
+}
+
+.button {
+    background-color: var(--darkgreen);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: .5em;
+}
+
+.buttons {
+    text-align: center;
+    margin: 3em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 12px;
 }
