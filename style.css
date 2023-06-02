@@ -19,9 +19,12 @@ html {
     margin: 1em;
 }
 
-.zeleny_text {
+.navigace__text {
     text-decoration: none;
     color: var(--darkgreen);
+}
+.navigace__text:hover {
+    text-decoration: underline;
 }
 
 .pozadi {
@@ -99,6 +102,12 @@ html {
     font-weight: 700;
     border-radius: 30px;
     padding: .5em;
+}
+
+.button:hover {
+    background-color: var(--white);
+    border: 3px solid var(--darkgreen);
+    color: var(--darkgreen);
 }
 
 .buttons {
