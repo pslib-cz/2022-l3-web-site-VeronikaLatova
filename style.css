@@ -3,8 +3,59 @@
     --darkgreen: #214E34;
     --green: #839073;
     --gray: #D9D9D9;
+    --black: #000;
 }
 
 html {
     font-family: 'Open Sans', sans-serif;
+    color: var(--darkgreen);
+}
+
+.navigace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    margin: 1em;
+}
+
+.pozadi {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.fotka {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.pronajem {
+    position: absolute;
+    color: var(--white);
+    margin-right: 15em;
+    left: 20px;
+    bottom: 150px;
+    filter: drop-shadow(0px 5px 5px var(--black))
+}
+
+.vyhody {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    font-weight: 700;
+    background-color: var(--green);
+}
+
+.vyhoda--rekreace {
+    background-image: url(./imgs/);
 }
