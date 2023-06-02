@@ -22,7 +22,9 @@ html {
 .navigace__text {
     text-decoration: none;
     color: var(--darkgreen);
+    padding-left: .5em;
 }
+
 .navigace__text:hover {
     text-decoration: underline;
 }
