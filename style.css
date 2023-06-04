@@ -78,29 +78,30 @@ html {
     color: var(--white);
     font-weight: 700;
     background-color: var(--green);
+    padding: 1em;
 }
 
 .vyhoda--rekreace {
     background-image: url(./imgs/ico/rekreace.svg);
     background-repeat: no-repeat;
     padding-left: 7em;
-    padding-bottom: 1em;
-    margin: 1.5em;
+    padding-bottom: 2.5em;
+    margin: .5em;
 }
 .vyhoda--prostredi {
     background-image: url(./imgs/ico/prostredi.svg);
     background-repeat: no-repeat;
     padding-left: 7em;
-    padding-bottom: 1em;
-    margin: 1.5em;
+    padding-bottom: 2.5em;
+    margin: .5em;
 }
 
 .vyhoda--mapa {
     background-image: url(./imgs/ico/bod.svg);
     background-repeat: no-repeat;
     padding-left: 7em;
-    padding-bottom: 1em;
-    margin: 1.5em;
+    padding-bottom: 2.5em;
+    margin: .5em;
 }
 
 .karta {
