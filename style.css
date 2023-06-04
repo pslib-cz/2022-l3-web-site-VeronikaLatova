@@ -152,10 +152,22 @@ html {
 } 
 
 .sekce {
-    margin: 1em;
+    margin: 2em;
 }
 
 .thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.thumbnails2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.thumbnails3 {
     display: flex;
     flex-wrap: wrap;
     gap: .5em;
