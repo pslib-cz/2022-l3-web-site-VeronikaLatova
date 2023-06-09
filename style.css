@@ -156,9 +156,10 @@ html {
 }
 
 .thumbnails {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: .5em;
+    margin: 1em;
 }
 
 .thumbnails2 {
