@@ -56,6 +56,7 @@ html {
 }
 
 .galerie__h1 {
+    font-size: 40px;
     color: var(--white);
     position: absolute;
     left: 20px;
@@ -64,6 +65,7 @@ html {
 }
 
 .pronajem {
+    font-size: 40px;
     position: absolute;
     color: var(--white);
     margin-right: 5em;
@@ -153,23 +155,11 @@ html {
 
 .sekce {
     margin: 1.5em;
+    margin-bottom: 3em;
 }
 
-.thumbnails {
+.thumbnails, .thumbnails2, .thumbnails3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: .5em;
-    margin: 1em;
-}
-
-.thumbnails2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5em;
-}
-
-.thumbnails3 {
-    display: flex;
-    flex-wrap: wrap;
     gap: .5em;
 }
