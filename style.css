@@ -21,11 +21,12 @@ html {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    padding-left: 0em;
 }
 
 .navigace__text:hover {
-    text-decoration: underline;
-
+    cursor: pointer;
+    font-weight: 700;
 }
 
 .pozadi {
