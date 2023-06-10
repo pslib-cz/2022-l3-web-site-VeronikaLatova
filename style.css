@@ -55,14 +55,14 @@ html {
     object-fit: cover;
 }
 
-.galerie__h1 {
+.h1 {
     font-size: 40px;
     color: var(--white);
     position: absolute;
     left: 20px;
     bottom: 150px;
     filter: drop-shadow(0px 5px 5px var(--black))
-}
+} 
 
 .pronajem {
     font-size: 40px;
@@ -72,6 +72,10 @@ html {
     left: 40px;
     bottom: 150px;
     filter: drop-shadow(0px 5px 5px var(--black))
+}
+
+h2 {
+    font-size: 32px;
 }
 
 .vyhody {
@@ -162,4 +166,18 @@ html {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: .5em;
+}
+
+.kontakt__main {
+    margin: 2em;
+}
+
+.cenik__price {
+    margin-bottom: 2em;
+    border: .5px solid var(--gray);
+    padding-left: .5em;
+}
+
+.cenik__text {
+    margin-bottom: 4em;
 }

@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="rezervace.css">
+    <link rel="stylesheet" href="rezervace.js">
     <title>Pronájem karavanu u Labe - ceník a kontakt</title>
 </head>
 <body>
@@ -23,44 +25,94 @@
             </div>
         </nav>
         <div class="pozadi">
-            <img class="fotka--kontakt" src="" alt="Pohled na pergolu zpoza otevřené branky">
+            <img class="foto" src="./imgs/kolem/DSCN0663.JPG" alt="Pohled na pergolu zpoza otevřené branky">
         </div>
-        <h1 class="kontakt__h1">Ceník a kontakt</h1>
+        <h1 class="h1">Ceník a kontakt</h1>
     </header>
     <main>
-        <div class="cenik">
-            <div class="cenik__text">
-                <h2>Ceník</h2>
-                <p>V měsících březen, duben, květen:</p>
-                <p>Od čtvrtka do neděle: 4550 Kč</p>
-                <p>Od neděle do čtvrtka: 4450 Kč</p>
-                <p>V měsících červen, červenec, srpen, září:</p>
-                <p>Od čtvrtka do neděle: 4750 Kč</p>
-                <p>Od neděle do čtvrtka: 4650 Kč</p>
-                <p>Za případné vypůjčení loďky se platí příplatek 500 Kč.</p>
-                <p>Veškeré potřebné informace po vyplnění rezervace obdržíte emailem.</p>
+        <div class="kontakt__main">
+            <div class="cenik">
+                <div class="cenik__text">
+                    <h2>Ceník</h2>
+                    <div class="cenik__price">
+                        <p><b>V měsících březen, duben, květen:</b></p>
+                        <p>Od čtvrtka do neděle: 4550 Kč</p>
+                        <p>Od neděle do čtvrtka: 4450 Kč</p>
+                    </div>
+                    <div class="cenik__price">
+                        <p><b>V měsících červen, červenec, srpen, září:</b></p>
+                        <p>Od čtvrtka do neděle: 4750 Kč</p>
+                        <p>Od neděle do čtvrtka: 4650 Kč</p>
+                    </div>
+                    <p>Za případné vypůjčení loďky se platí příplatek 500 Kč.</p>
+                    <p>Veškeré potřebné informace po vyplnění rezervace obdržíte emailem.</p>
+                </div>
+                <form action="reservation.php" method="post">
+                    <h2>Rezervace</h2>
+                    <div class="elem-group">
+                      <label for="name">Jméno a příjmení</label>
+                      <input type="text" id="name" name="visitor_name" placeholder="Jan Rybář" pattern=[A-Z\sa-z]{3,20} required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="email">Váš e-mail</label>
+                      <input type="email" id="email" name="visitor_email" placeholder="jan.rybar@gmail.com" required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="phone">Vaše telefonní číslo</label>
+                      <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                    </div>
+                    <hr>
+                    <div class="elem-group inlined">
+                      <label for="adult">Dospělí</label>
+                      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="child">Děti</label>
+                      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkin-date">Příjezd</label>
+                      <input type="date" id="checkin-date" name="checkin" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkout-date">Odjezd</label>
+                      <input type="date" id="checkout-date" name="checkout" required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="room-selection">Jak zde chcete trávit čas?</label>
+                      <select id="room-selection" name="room_preference" required>
+                          <option value="">Rybaření</option>
+                          <option value="connecting">Rekreace</option>
+                          <option value="adjoining">Sport</option>
+                          <option value="adjacent">Jiné</option>
+                      </select>
+                    </div>
+                    <hr>
+                    <div class="elem-group">
+                      <label for="message">Máte nějaké poznámky?</label>
+                      <textarea id="message" name="visitor_message" placeholder="Napište nám, jestli máte něco důležitého..." required></textarea>
+                    </div>
+                    <button type="submit">Rezervovat</button>
+                  </form>
             </div>
-            <div class="cenik__rezervace">
-                <img src="" alt="prozatimni obrazek rezervace, protoze jsem lina delat neco navic">
+            <div class="kontakt">
+                <div class="osoba">
+                    <p>Miroslav Lát</p>
+                </div>
+                <div class="telefon">
+                    <a href="tel:+420123456789">+420 123 456 789</a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:karavanulabe@gmail.com">karavanulabe@gmail.com</a>
+                </div>
+                <div class="adresa">
+                    <p>Adresa, kterou momentálně nevím :d</p>
+                </div>
+                <p>Neváhejte mě kontaktovat v případě, že máte jakékoli dotazy.</p>
             </div>
-        </div>
-        <div class="kontakt">
-            <div class="osoba">
-                <p>Miroslav Lát</p>
+            <div class="mapa">
+                <img src="" alt="Obrázek mapy, ale bylo by lepší sem dát mapu pohyblivou, zdroj">
             </div>
-            <div class="telefon">
-                <a href="tel:+420123456789">+420 123 456 789</a>
-            </div>
-            <div class="mail">
-                <a href="mailto:karavanulabe@gmail.com">karavanulabe@gmail.com</a>
-            </div>
-            <div class="adresa">
-                <p>Adresa, kterou momentálně nevím :d</p>
-            </div>
-            <p>Neváhejte mě kontaktovat v případě, že máte jakékoli dotazy.</p>
-        </div>
-        <div class="mapa">
-            <img src="" alt="Obrázek mapy, ale bylo by lepší sem dát mapu pohyblivou, zdroj">
         </div>
     </main>
     <footer>
