@@ -173,11 +173,41 @@ h2 {
 }
 
 .cenik__price {
-    margin-bottom: 1em;
-    border: .5px solid var(--gray);
-    padding-left: .5em;
-}
+    margin-bottom: 3em;
+    /* border: .5px solid var(--gray);
+    padding-left: .5em; */
+} 
+
 
 .cenik__text {
     margin-bottom: 3em;
+}
+
+.osoba {
+    background-image: url(./imgs/ico/osoba.svg);
+    background-repeat: no-repeat;
+    padding-left: 4em;
+    margin: 1em;
+
+}
+
+.telefon {
+    background-image: url(./imgs/ico/tel.svg);
+    background-repeat: no-repeat;
+    padding-left: 4em;
+    margin: 1em;
+}
+
+.adresa {
+    background-image: url(./imgs/ico/lokace.svg);
+    background-repeat: no-repeat;
+    padding-left: 4em;
+    margin: 1em;
+}
+
+.mail {
+    background-image: url(./imgs/ico/email.svg);
+    background-repeat: no-repeat;
+    padding-left: 4em;
+    margin: 1em;
 }
