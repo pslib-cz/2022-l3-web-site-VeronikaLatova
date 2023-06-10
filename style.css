@@ -11,22 +11,21 @@ html {
     color: var(--darkgreen);
 }
 
-.navigace {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 700;
-    margin: 1em;
-}
-
 .navigace__text {
+    justify-content: center;
     text-decoration: none;
     color: var(--darkgreen);
-    padding-left: .5em;
+}
+
+.navigace__texty {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 .navigace__text:hover {
     text-decoration: underline;
+
 }
 
 .pozadi {
@@ -173,11 +172,11 @@ h2 {
 }
 
 .cenik__price {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     border: .5px solid var(--gray);
     padding-left: .5em;
 }
 
 .cenik__text {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
