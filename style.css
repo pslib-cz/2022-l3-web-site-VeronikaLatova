@@ -186,36 +186,45 @@ h2 {
 .kontakt__osoba {
     background-image: url(./imgs/ico/user.svg);
     background-repeat: no-repeat;
-    padding: 15px 40px 15px 40px;
+    padding: 10px 40px 15px 40px;
+    margin: .5em;
 }
 
 .kontakt__telefon {
     background-image: url(./imgs/ico/phone.svg);
     background-repeat: no-repeat;
-    padding: 15px 40px 15px 40px;
+    padding: 10px 40px 15px 40px;
+    margin: .5em;
 }
 
 .kontakt__mail {
     background-image: url(./imgs/ico/envelop.svg);
     background-repeat: no-repeat;
-    padding: 15px 40px 15px 40px;
+    padding: 10px 40px 15px 40px;
+    margin: .5em;
 }
 
 .kontakt__adresa {
     background-image: url(./imgs/ico/location2.svg);
     background-repeat: no-repeat;
-    padding: 15px 40px 15px 40px;
+    padding: 10px 40px 15px 40px;
+    margin: .5em;
 } 
 
 .kontakt__mail_text {
-    text-decoration: none;
     color: var(--darkgreen);
 }
 
 .kontakt__telefon_text {
-    text-decoration: none;
     color: var(--darkgreen);
 }
 
+.kontakt__osoba_text {
+    display: inline;
+}
+
+.kontakt__adresa_text {
+    display: inline;
+}
 
 

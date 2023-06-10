@@ -60,5 +60,8 @@
   }
   
   button:hover {
-    border: 2px solid black;
+    border: 3px solid var(--darkgreen);
+    cursor: pointer;
+    color: var(--darkgreen);
+    background: var(--white);
   }
