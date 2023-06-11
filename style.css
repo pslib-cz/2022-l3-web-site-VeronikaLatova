@@ -34,7 +34,7 @@ html {
 .pozadi {
     position: relative;
     width: 100vw;
-    height: 70vh;
+    height: 50vh;
 }
 
 .foto {
@@ -59,21 +59,21 @@ html {
 }
 
 .h1 {
-    font-size: 40px;
+    font-size: 50px;
     color: var(--white);
     position: absolute;
-    left: 20px;
-    bottom: 150px;
+    left: 40px;
+    top: 40vh;
     filter: drop-shadow(0px 5px 5px var(--black))
 } 
 
 .pronajem {
-    font-size: 40px;
+    font-size: 50px;
     position: absolute;
     color: var(--white);
     margin-right: 5em;
     left: 40px;
-    bottom: 150px;
+    top: 20vh;
     filter: drop-shadow(0px 5px 5px var(--black))
 }
 
@@ -297,8 +297,5 @@ h2 {
 }
 
 @media only screen and (min-width: 1920px) {
-    .homepage__main {
-        padding-left: 10em;
-        padding-right: 10em;
-    }
+
 }
