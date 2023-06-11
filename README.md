@@ -15,6 +15,6 @@ Nezapomenu upravit odkazy a "aktivovat" GitHub Pages...
 - [ ] Hamburger menu (s JS)
 - [x] Implementována [LightGallery](https://github.com/sachinchoolur/lightGallery)
 - [ ] Implementován [Swiper](https://swiperjs.com/) nebo [Glide](https://glidejs.com/)
-- [ ] ...desatero
+- [x] ...desatero
 - [x] Zcela funkční při vw 360px
 - [x] Zcela funkční při vw 2560px
