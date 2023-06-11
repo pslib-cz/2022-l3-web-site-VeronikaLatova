@@ -11,6 +11,8 @@ html {
     color: var(--darkgreen);
 }
 
+
+
 .navigace__text {
     justify-content: center;
     text-decoration: none;
@@ -232,12 +234,17 @@ h2 {
     width: 100%;
 }
 
+.karta__text > p {
+    font-size: 20px;
+}
+
 
 
 @media only screen and (min-width: 768px) {
     .vyhody {
         flex-direction: row;
         padding: 1em;
+        justify-content: center;
     }
 
     .karta {
@@ -254,10 +261,44 @@ h2 {
     }
     
     form {
-        width: 70vw;
+        width: 50vw;
     } 
 }
 
 @media only screen and (min-width: 961px) {
-    
+    .karta__img {
+        max-width: 40vw;
+    }
+
+    .karta {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .homepage__main {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    form {
+        width: 25vw;
+    }
+
+    .kontakt__wrap {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sekce {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+    .homepage__main {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
 }

@@ -29,91 +29,96 @@
     </header>
     <main>
         <div class="kontakt__main">
-            <div class="cenik">
-                <div class="cenik__text">
-                    <h2>Ceník</h2>
-                    <div class="cenik__price">
-                        <p><b>V měsících březen, duben, květen:</b></p>
-                        <p>Od čtvrtka do neděle: 4550 Kč</p>
-                        <p>Od neděle do čtvrtka: 4450 Kč</p>
+            <div class="kontakt__wrap">
+              <div>
+                <div class="cenik">
+                    <div class="cenik__text">
+                        <h2>Ceník</h2>
+                        <div class="cenik__price">
+                            <p><b>V měsících březen, duben, květen:</b></p>
+                            <p>Od čtvrtka do neděle: 4550 Kč</p>
+                            <p>Od neděle do čtvrtka: 4450 Kč</p>
+                        </div>
+                        <div class="cenik__price">
+                            <p><b>V měsících červen, červenec, srpen, září:</b></p>
+                            <p>Od čtvrtka do neděle: 4750 Kč</p>
+                            <p>Od neděle do čtvrtka: 4650 Kč</p>
+                        </div>
+                        <p>Za případné vypůjčení loďky se platí příplatek 500 Kč.</p>
                     </div>
-                    <div class="cenik__price">
-                        <p><b>V měsících červen, červenec, srpen, září:</b></p>
-                        <p>Od čtvrtka do neděle: 4750 Kč</p>
-                        <p>Od neděle do čtvrtka: 4650 Kč</p>
-                    </div>
-                    <p>Za případné vypůjčení loďky se platí příplatek 500 Kč.</p>
                 </div>
-                <form action="reservation.php" method="post">
-                    <h2>Rezervace</h2>
-                    <div class="elem-group">
-                      <label for="name">Jméno a příjmení</label>
-                      <input type="text" id="name" name="visitor_name" placeholder="Jan Rybář" pattern=[A-Z\sa-z]{3,20} required>
+                <div class="kontakt">
+                  <h2>Kontakt</h2>
+                    <div class="kontakt__osoba">
+                        <p class="kontakt__osoba_text">Miroslav Lát</p>
                     </div>
-                    <div class="elem-group">
-                      <label for="email">Váš e-mail</label>
-                      <input type="email" id="email" name="visitor_email" placeholder="jan.rybar@gmail.com" required>
+                    <div class="kontakt__telefon">
+                        <a class="kontakt__telefon_text" href="tel:+420123456789">+420 123 456 789</a>
                     </div>
-                    <div class="elem-group">
-                      <label for="phone">Vaše telefonní číslo</label>
-                      <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                    <div class="kontakt__mail">
+                        <a class="kontakt__mail_text" href="mailto:karavanulabe@gmail.com">karavanulabe@gmail.com</a>
                     </div>
-                    <hr>
-                    <div class="elem-group inlined">
-                      <label for="adult">Dospělí</label>
-                      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                    <div class="kontakt__adresa">
+                        <p class="kontakt__adresa_text" >Adresa 123, Dobříň, 44452</p>
                     </div>
-                    <div class="elem-group inlined">
-                      <label for="child">Děti</label>
-                      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-                    </div>
-                    <div class="elem-group inlined">
-                      <label for="checkin-date">Příjezd</label>
-                      <input type="date" id="checkin-date" name="checkin" required>
-                    </div>
-                    <div class="elem-group inlined">
-                      <label for="checkout-date">Odjezd</label>
-                      <input type="date" id="checkout-date" name="checkout" required>
-                    </div>
-                    <div class="elem-group">
-                      <label for="room-selection">Jak zde chcete trávit čas?</label>
-                      <select id="room-selection" name="room_preference" required>
-                          <option value="">Zvolte možnost...</option>
-                          <option value="fishing">Rybaření</option>
-                          <option value="connecting">Rekreace</option>
-                          <option value="adjoining">Sport</option>
-                          <option value="adjacent">Jiné</option>
-                      </select>
-                    </div>
-                    <hr>
-                    <div class="elem-group">
-                      <label for="message">Máte nějaké poznámky?</label>
-                      <textarea id="message" name="visitor_message" placeholder="Napište nám, jestli máte něco důležitého..." required></textarea>
-                    </div>
-                    <button type="submit">Rezervovat</button>
-                    <p>Veškeré potřebné informace po vyplnění rezervace obdržíte emailem.</p>
-                  </form>
+                    <p>Neváhejte mě kontaktovat v případě, že máte jakékoli dotazy.</p>
+                </div>
+              </div>
+              <form action="reservation.php" method="post">
+                <h2>Rezervace</h2>
+                <div class="elem-group">
+                  <label for="name">Jméno a příjmení</label>
+                  <input type="text" id="name" name="visitor_name" placeholder="Jan Rybář" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                  <label for="email">Váš e-mail</label>
+                  <input type="email" id="email" name="visitor_email" placeholder="jan.rybar@gmail.com" required>
+                </div>
+                <div class="elem-group">
+                  <label for="phone">Vaše telefonní číslo</label>
+                  <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <hr>
+                <div class="elem-group inlined">
+                  <label for="adult">Dospělí</label>
+                  <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label for="child">Děti</label>
+                  <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label for="checkin-date">Příjezd</label>
+                  <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label for="checkout-date">Odjezd</label>
+                  <input type="date" id="checkout-date" name="checkout" required>
+                </div>
+                <div class="elem-group">
+                  <label for="room-selection">Jak zde chcete trávit čas?</label>
+                  <select id="room-selection" name="room_preference" required>
+                      <option value="">Zvolte možnost...</option>
+                      <option value="fishing">Rybaření</option>
+                      <option value="connecting">Rekreace</option>
+                      <option value="adjoining">Sport</option>
+                      <option value="adjacent">Jiné</option>
+                  </select>
+                </div>
+                <hr>
+                <div class="elem-group">
+                  <label for="message">Máte nějaké poznámky?</label>
+                  <textarea id="message" name="visitor_message" placeholder="Napište nám, jestli máte něco důležitého..." required></textarea>
+                </div>
+                <button type="submit">Rezervovat</button>
+                <p>Veškeré potřebné informace po vyplnění rezervace obdržíte emailem.</p>
+              </form>
             </div>
-            <div class="kontakt">
-              <h2>Kontakt</h2>
-                <div class="kontakt__osoba">
-                    <p class="kontakt__osoba_text">Miroslav Lát</p>
-                </div>
-                <div class="kontakt__telefon">
-                    <a class="kontakt__telefon_text" href="tel:+420123456789">+420 123 456 789</a>
-                </div>
-                <div class="kontakt__mail">
-                    <a class="kontakt__mail_text" href="mailto:karavanulabe@gmail.com">karavanulabe@gmail.com</a>
-                </div>
-                <div class="kontakt__adresa">
-                    <p class="kontakt__adresa_text" >Adresa 123, Dobříň, 44452</p>
-                </div>
-                <p>Neváhejte mě kontaktovat v případě, že máte jakékoli dotazy.</p>
-            </div>
-            <div class="kontakt__mapa">
-              <h2>Mapa</h2>
-              <iframe class="mapa" style="border:none" src="https://frame.mapy.cz/s/refuvojago" width="500" height="333" frameborder="0"></iframe>
-            </div>
+              <div class="kontakt__mapa">
+                <h2>Mapa</h2>
+                <iframe class="mapa" style="border:none" src="https://frame.mapy.cz/s/refuvojago" width="500" height="333" frameborder="0"></iframe>
+              </div>
+
     </main>
     <footer>
         <div class="footer">
