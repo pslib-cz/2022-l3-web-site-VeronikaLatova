@@ -36,7 +36,7 @@ html {
 }
 
 .foto {
-    filter: brightness(0.5);
+    filter: brightness(0.8);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -112,11 +112,11 @@ h2 {
 }
 
 .karta {
-    margin: 2em;
+    padding: 2em;
 }
 
 .karta--left {
-    margin: 2em;
+    padding: 2em;
 }
 
 .button {
@@ -232,3 +232,32 @@ h2 {
     width: 100%;
 }
 
+
+
+@media only screen and (min-width: 768px) {
+    .vyhody {
+        flex-direction: row;
+        padding: 1em;
+    }
+
+    .karta {
+        display: flex;
+        gap: 2em;
+        border-bottom: .5px solid var(--gray);
+    }
+
+    .karta--left {
+        display: flex;
+        gap: 2em;
+        flex-direction: row-reverse;
+        border-bottom: .5px solid var(--gray);
+    }
+    
+    form {
+        width: 70vw;
+    } 
+}
+
+@media only screen and (min-width: 961px) {
+    
+}
