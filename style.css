@@ -69,12 +69,12 @@ html {
 
 .pronajem {
     font-size: 50px;
+    text-transform: uppercase;
     position: absolute;
     color: var(--white);
-    margin-right: 5em;
-    left: 40px;
-    top: 20vh;
-    filter: drop-shadow(0px 5px 5px var(--black))
+    text-align: center;
+    filter: drop-shadow(0px 5px 5px var(--black));
+    top: 150px;
 }
 
 h2 {
@@ -84,9 +84,9 @@ h2 {
 .vyhody {
     display: flex;
     flex-direction: column;
-    color: var(--white);
+    /* color: var(--white); */
     font-weight: 700;
-    background-color: var(--green);
+    /* background-color: var(--green); */
     padding: 2em;
 }
 
@@ -263,6 +263,11 @@ h2 {
     form {
         width: 50vw;
     } 
+
+    .pronajem {
+        left: 25vw;
+        right: 25vw;
+    }
 }
 
 @media only screen and (min-width: 961px) {
@@ -297,5 +302,7 @@ h2 {
 }
 
 @media only screen and (min-width: 1920px) {
-
+    .pronajem {
+        top: 300px
+    }
 }
