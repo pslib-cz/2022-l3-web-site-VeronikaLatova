@@ -11,7 +11,9 @@ html {
     color: var(--darkgreen);
 }
 
-
+.navigace {
+    text-transform: uppercase;
+}
 
 .navigace__text {
     justify-content: center;
@@ -60,12 +62,23 @@ html {
 
 .h1 {
     font-size: 50px;
+    text-transform: uppercase;
     color: var(--white);
     position: absolute;
-    left: 40px;
     top: 40vh;
+    left: 5vw;
     filter: drop-shadow(0px 5px 5px var(--black))
 } 
+
+.kontakt__h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--white);
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    filter: drop-shadow(0px 5px 5px var(--black))
+}
 
 .pronajem {
     font-size: 50px;
@@ -84,9 +97,9 @@ h2 {
 .vyhody {
     display: flex;
     flex-direction: column;
-    /* color: var(--white); */
+    color: var(--white);
     font-weight: 700;
-    /* background-color: var(--green); */
+    background-color: var(--green);
     padding: 2em;
 }
 
@@ -267,6 +280,10 @@ h2 {
     .pronajem {
         left: 25vw;
         right: 25vw;
+    }
+
+    .kontakt__h1 {
+        top: 40vh;
     }
 }
 
